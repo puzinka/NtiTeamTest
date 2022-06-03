@@ -1,10 +1,20 @@
+- var titleBanner='Дозаторы и антисептики'
+- var textBanner='Устанавливаются в общественных местах для предотвращения распространения вирусов микробов'
+
 .banner
-    img(src="../img/banner.png", alt="Banner")
-    .button-banner
-        div
-            mixin forward
-            img(src="../img/forward.svg")
-            +forward
-            +forward
-            +forward
-            +forward
+    img(class="picture", src="../img/banner.png", alt="Banner")
+    .banner-container
+        .text-banner
+            p=titleBanner
+            p=textBanner
+        .button-banner
+            div
+                mixin forward
+                    img(src="../img/forward.svg")
+
+                +forward
+                +forward
+                +forward
+                +forward
+            p Подробнее
+    

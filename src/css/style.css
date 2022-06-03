@@ -126,17 +126,70 @@ body {
   background: linear-gradient(to right, #1dbcd1, #3ddcf1);
   position: relative;
 }
-.banner img {
+.banner .picture {
   position: absolute;
   left: 605px;
   bottom: 0;
 }
+.banner .banner-container {
+  width: 1522px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .button-banner {
-  height: 78px;
-  width: 282px;
+  height: 26px;
+  width: 180px;
   border-radius: 2px;
   background: #ffffff;
+  margin-top: 110px;
+  padding: 26px 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40px;
+}
+.button-banner div img:first-child {
+  opacity: 20%;
+}
+.button-banner div img:nth-child(2) {
+  opacity: 50%;
+}
+.button-banner div img:nth-child(3) {
+  opacity: 80%;
+}
+.button-banner p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2B2E34;
+  margin: 0;
+}
+
+.text-banner {
+  width: 580px;
+  margin-top: 73px;
+}
+.text-banner p:first-child {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 600;
+  font-size: 39px;
+  color: #ffffff;
+  margin: 13px 0;
+}
+.text-banner p:last-child {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
