@@ -1,0 +1,28 @@
+- var textInSearch='Поиск товаров..'
+
+header
+    .header
+        img.menu(src="../img/menu.svg", alt="Menu")
+        img.logo(src="../img/logo.svg", alt="Logo")
+        .search
+            img(src="../img/search.png", alt="Search")
+            input(placeholder=textInSearch, maxlength="90")
+        .header-menu
+            img(src="../img/delivery.png", alt="Delivery")
+            img(src="../img/account.png", alt="Account")
+            .cart 
+                p 3
+                img(src="../img/cart.png", alt="Cart")
+    .feedback
+        mixin contact (path, discription, text)
+            div
+                img(src=path, alt=discription)
+                p=text
+        +contact("../img/mark.png", "City", "Екатеринбург")
+        +contact("../img/phone.png", "Phone number", "+7 (495) 506-36-50")
+        +contact("../img/email.png", "Email", "office@uconerfo.ru")
+        +contact("../img/request.png", "Request", "Заявка на расчет")
+        +contact("../img/contacts.png", "Contacts", "Контакты")
+
+        
+        

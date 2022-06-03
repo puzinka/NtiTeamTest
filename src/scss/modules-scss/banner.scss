@@ -1,0 +1,22 @@
+$banner-h: 295px;
+
+.banner {
+    height: $banner-h;
+    background: linear-gradient(to right, $blue-dark, $blue-light);
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 605px;
+        bottom: 0;
+    }
+}
+
+$button-h: 78px;
+
+.button-banner {
+    height: $button-h;
+    width: 282px;
+    border-radius: 2px;
+    background: $white;
+}

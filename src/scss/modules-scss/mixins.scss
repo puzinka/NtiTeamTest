@@ -1,0 +1,12 @@
+@mixin flex-container($orientation, $position) {
+    display: flex;
+    flex-direction: $orientation;
+    justify-content: $position;
+}
+
+@mixin font ($font-weight,$size, $color) {
+    font-family: Euclid-Circular-A, sans-serif;
+    font-weight: $font-weight;
+    font-size: $size;
+    color: $color;
+}
