@@ -1,0 +1,26 @@
+.sections {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1522px;
+    padding: 30px 0;
+}
+
+.header-section {
+    @include flex-container(row, space-between);
+    width: 300px;
+
+    p {
+        @include font (450, 15px, $gray);
+        display: inline;
+    }
+
+    p:nth-child(3) {
+        color: $dark;
+    }
+}
+
+.title-section {
+    @include font (450, 40px, $dark);
+    margin: 45px 0 60px;
+    letter-spacing: -0.6px;
+}

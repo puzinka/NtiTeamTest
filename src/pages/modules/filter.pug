@@ -1,0 +1,38 @@
+.filter
+    .container
+        p.title-filter Фильтры
+        #reset
+            p Сбросить
+            img(src="../img/reset.png", alt="Reset")
+
+    mixin header(text, name)
+        div(class=name)
+            p=text
+            img(src="../img/show.png", alt="Show")
+    //mixin checkbox(name-id, text)
+     //   div 
+       //     input(type="checkbox" id=name-id)
+         //   label(for=name-id)=text
+
+    +header("Отопительное оборудование","classification filter-section-header")
+    #classification-hidden
+        div 
+            input(type="checkbox" id="radiator")
+            label(for="radiator") Радиаторы отопления
+    
+    +header("Бренд", "brand filter-section-header")
+
+    div(class="price filter-section-header")
+            p Цена
+
+    +header("Количество секций", "count-sections filter-section-header")
+
+    +header("Межосетевое расстояние", "distance filter-section-header")
+
+    +header("Площадь отопления", "heating-area filter-section-header")
+
+    +header("Цвет", "color filter-section-header")
+
+
+
+
