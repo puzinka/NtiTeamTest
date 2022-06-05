@@ -201,6 +201,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 /*
@@ -359,7 +360,7 @@ header {
 #dictance-hidden,
 #heating-area-sections-hidden,
 #color-sections-hidden {
-  margin-top: 24px;
+  margin-top: 23px;
 }
 
 .filter .container2 {
@@ -732,5 +733,159 @@ footer .bottom-footer img {
   height: 33px;
   margin-top: 10px;
 }
+
+.color-regular {
+  width: 158px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0.3px;
+}
+.color-regular p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #2B2E34;
+  margin-left: 27px;
+  margin-top: 0;
+}
+.color-regular .circ-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 11px;
+  margin-top: 7px;
+}
+
+.color-active {
+  width: 158px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0.3px;
+}
+.color-active p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2B2E34;
+  margin-left: 23px;
+  margin-top: 0;
+  position: relative;
+}
+.color-active .circ-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 11px;
+  border: 2px solid #ffffff;
+  margin-top: 7px;
+}
+.color-active .color-red,
+.color-active .color-yellow,
+.color-active .color-green,
+.color-active .color-blue,
+.color-active .color-purple,
+.color-active .color-pink,
+.color-active .color-beige,
+.color-active .color-white,
+.color-active .color-black,
+.color-active .color-gray {
+  position: relative;
+}
+.color-active .color-red::before,
+.color-active .color-yellow::before,
+.color-active .color-green::before,
+.color-active .color-blue::before,
+.color-active .color-purple::before,
+.color-active .color-pink::before,
+.color-active .color-beige::before,
+.color-active .color-white::before,
+.color-active .color-black::before,
+.color-active .color-gray::before {
+  position: absolute;
+  background-image: url("../img/color-reset.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: -2px;
+}
+.color-active .color-red::before,
+.color-active .color-pink::before {
+  left: 116px;
+}
+.color-active .color-yellow::before,
+.color-active .color-black::before {
+  left: 110px;
+}
+.color-active .color-green::before {
+  left: 117px;
+}
+.color-active .color-blue::before,
+.color-active .color-white::before,
+.color-active .color-gray::before {
+  left: 99px;
+}
+.color-active .color-purple::before {
+  left: 146px;
+}
+.color-active .color-beige::before {
+  left: 119px;
+}
+
+.color-red {
+  background: #FF6060;
+}
+
+.color-yellow {
+  background: #FFDC60;
+}
+
+.color-green {
+  background: #72E191;
+}
+
+.color-blue {
+  background: #6070FF;
+}
+
+.color-purple {
+  background: #A660FF;
+}
+
+.color-pink {
+  background: #FF60AC;
+}
+
+.color-beige {
+  background: #EEC3AB;
+}
+
+.color-white {
+  background: #ffffff;
+}
+
+.color-black {
+  background: #292929;
+}
+
+.color-gray {
+  background: #9D9D9D;
+}
+
+/*
+
+.color-active p::before {
+    position: absolute;
+    background-image: url("../img/color-reset.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 118px;
+    top: 8px;
+}
+*/
 
 /*# sourceMappingURL=style.css.map */

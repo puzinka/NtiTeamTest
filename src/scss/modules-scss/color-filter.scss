@@ -1,0 +1,158 @@
+.color-regular {
+    width: 158px;
+    @include flex-container(row, flex-start);
+    margin-top: 0.3px;
+
+    p {
+        @include font (400, 15px, $dark);
+        margin-left: 27px;
+        margin-top: 0;
+    }
+
+    .circ-color {
+        width: 10px;
+        height: 10px;
+        border-radius: 11px;
+        margin-top: 7px;
+    }
+
+}
+
+.color-active {
+    width: 158px;
+    @include flex-container(row, flex-start);
+    margin-top: 0.3px;
+
+    p {
+        @include font (500, 15px, $dark);
+        margin-left: 23px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .circ-color {
+        width: 10px;
+        height: 10px;
+        border-radius: 11px;
+        border: 2px solid $white;
+        margin-top: 7px;
+    }
+
+    .color-red,
+    .color-yellow,
+    .color-green,
+    .color-blue,
+    .color-purple,
+    .color-pink,
+    .color-beige,
+    .color-white,
+    .color-black,
+    .color-gray {
+        position: relative;
+    }
+
+    .color-red::before,
+    .color-yellow::before,
+    .color-green::before,
+    .color-blue::before,
+    .color-purple::before,
+    .color-pink::before,
+    .color-beige::before,
+    .color-white::before,
+    .color-black::before,
+    .color-gray::before {
+        position: absolute;
+        background-image: url("../img/color-reset.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: -2px;
+    }
+
+    .color-red::before,
+    .color-pink::before  {
+        left: 116px;
+    }
+
+    .color-yellow::before,
+    .color-black::before {
+        left: 110px;
+    }
+
+    .color-green::before {
+        left: 117px;
+    }
+
+    .color-blue::before,
+    .color-white::before,
+    .color-gray::before {
+        left: 99px;
+    }
+
+    .color-purple::before {
+        left: 146px;
+    }
+
+    .color-beige::before {
+        left: 119px;
+    }
+
+}
+
+
+.color-red {
+    background: $red;
+}
+
+.color-yellow {
+    background: $yellow;
+}
+
+.color-green {
+    background: $green;
+}
+
+.color-blue {
+    background: $blue;
+}
+
+.color-purple {
+    background: $purple;
+}
+
+.color-pink {
+    background: $pink;
+}
+
+.color-beige {
+    background: $beige;
+}
+
+.color-white {
+    background: $white;
+}
+
+.color-black {
+    background: $black;
+}
+
+.color-gray {
+    background: $gray-color;
+}
+
+/*
+
+.color-active p::before {
+    position: absolute;
+    background-image: url("../img/color-reset.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 118px;
+    top: 8px;
+}
+*/
