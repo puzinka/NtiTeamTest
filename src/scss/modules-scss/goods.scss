@@ -9,9 +9,11 @@
     @include flex-container(row, space-between);
 }
 
+/*
 .container4 {
     @include flex-container(column, space-between);
 }
+*/
 
 $filter-result-w: 1133px;
 $filter-result-h: 85px;
@@ -20,9 +22,9 @@ $filter-result-h: 85px;
     @include flex-container(row, space-between);
     width: calc($filter-result-w - 40px * 2);
     height: $filter-result-h;
-    background: $gray-light;
     border-radius: 3px;
     padding: 0 40px;
+    background: $gray-light;
 
     .count-goods {
         @include flex-container(row, space-between);

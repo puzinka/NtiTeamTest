@@ -5,7 +5,9 @@ $img-menu-h: 24px;
 $search-h: 54px;
 $input-h: 24px;
 
-
+header {
+    background: $white;
+}
 .header {
     @include flex-container(row, space-between);
     height: $header-h;

@@ -1,0 +1,33 @@
+mixin second-card(sale)
+    if sale == true
+        .one-card
+            .img-card2
+                img(src="../img/card2.png", alt="Product image")
+            .data-card
+                p Биметаллический радиатор Royal Thermo Indigo Super 
+                .container5
+                    .price-sale
+                        p
+                            |4250
+                            sup ₽
+                        .cancel-price
+                            p
+                                |5890
+                                sup ₽
+                    .add-to-cart
+                        img(src="../img/cart-white.png", alt="Add to cart") 
+            .sale
+                img(src="../img/sale.png") 
+                p Акция
+    else
+        .one-card
+            .img-card2
+                img(src="../img/card2.png", alt="Product image")
+            .data-card
+                p Биметаллический радиатор Royal Thermo Indigo Super 
+                .container5
+                    p
+                        |4250
+                        sup ₽
+                    .add-to-cart
+                        img(src="../img/cart-white.png", alt="Add to cart") 

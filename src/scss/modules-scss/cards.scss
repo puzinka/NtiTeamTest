@@ -1,0 +1,10 @@
+.cards {
+    margin-top: 36px;
+    height: 2574px;
+    width: $filter-result-w;
+    @include flex-container(column, space-between);
+
+    .row-cards {
+        @include flex-container(row, space-between);
+    }
+}
