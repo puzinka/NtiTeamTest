@@ -1,0 +1,115 @@
+footer {
+    $footer-h: 663px;
+    $pt: 35px;
+
+    background: $white;
+    height: calc($footer-h - $pt);
+    padding-top: $pt;
+
+    .top-footer,
+    .bottom-footer {
+        @include flex-container(row, space-between);
+        margin-left: auto;
+        margin-right: auto;
+        width: 1522px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bold-text {
+        @include font (450, 18px, $dark);
+        letter-spacing: -0.3px;
+    }
+
+    .slim-text {
+        @include font (400, 15px, $gray-pale);
+        letter-spacing: 0.5px;
+    }
+
+    .footer-phone {
+        @include flex-container(row, space-between);
+        width: 190px;
+        margin-top: 30px;
+    }
+
+    .footer-email {
+        @include flex-container(row, space-between);
+        width: 200px;
+        margin-top: 38px;
+    }
+
+    .first-second .slim-text:nth-child(2) {
+        margin: 0;
+    }
+
+    .first-second .slim-text:nth-child(3) {
+        margin-top: 6px;
+    }
+
+    .first-fourth {
+        img {
+            height: 16px;
+            margin-top: 6px;
+        }
+
+        p:first-child {
+            margin-top: 34px;
+        }
+
+        div {
+            width: 235px;
+        }
+    }
+
+    .first-fourth div {
+        @include flex-container(row, space-between);
+    }
+
+    .vk {
+        margin: 0 14px 0 0px;
+    }
+
+    .inst {
+        margin: 0;
+    }
+
+    .icon-footer {
+        height: 17px;
+        margin-top: 22px;
+    }
+
+    .list-footer {
+        li {
+            margin-bottom: 11px;
+        }
+
+        li:nth-child(1) {
+            margin: 22px 0 28px;
+        }
+    }
+
+    .top-footer {
+        padding-bottom: 52px;
+    }
+
+    .bottom-footer {
+        border-top: 1px solid $line-footer;
+        padding-top: 35px;
+        padding-bottom: 48px;
+
+        div {
+            @include flex-container(row, space-between);
+            width: 280px;
+
+        }
+        img {
+            width: 157px;
+            height: 33px;
+            margin-top: 10px;
+        }
+    }
+}

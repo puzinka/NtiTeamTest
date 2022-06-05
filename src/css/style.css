@@ -598,7 +598,7 @@ header {
 }
 
 main {
-  margin: 80px auto 340px;
+  margin: 80px auto 190px;
   width: 1100px;
 }
 main p:nth-child(1) {
@@ -613,12 +613,12 @@ main p:nth-child(3),
 main p:nth-child(5),
 main p:nth-child(6) {
   font-family: Euclid-Circular-A, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   color: #2B2E34;
   line-height: 1.6rem;
   margin-bottom: 26px;
-  letter-spacing: 0.75px;
+  letter-spacing: 0.4px;
 }
 main p:nth-child(4) {
   font-family: Euclid-Circular-A, sans-serif;
@@ -627,6 +627,110 @@ main p:nth-child(4) {
   color: #2B2E34;
   margin-top: 48px;
   margin-bottom: 28px;
+}
+
+footer {
+  background: #ffffff;
+  height: 628px;
+  padding-top: 35px;
+}
+footer .top-footer,
+footer .bottom-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1522px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer .bold-text {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 450;
+  font-size: 18px;
+  color: #2B2E34;
+  letter-spacing: -0.3px;
+}
+footer .slim-text {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #7E838C;
+  letter-spacing: 0.5px;
+}
+footer .footer-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 190px;
+  margin-top: 30px;
+}
+footer .footer-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 38px;
+}
+footer .first-second .slim-text:nth-child(2) {
+  margin: 0;
+}
+footer .first-second .slim-text:nth-child(3) {
+  margin-top: 6px;
+}
+footer .first-fourth img {
+  height: 16px;
+  margin-top: 6px;
+}
+footer .first-fourth p:first-child {
+  margin-top: 34px;
+}
+footer .first-fourth div {
+  width: 235px;
+}
+footer .first-fourth div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .vk {
+  margin: 0 14px 0 0px;
+}
+footer .inst {
+  margin: 0;
+}
+footer .icon-footer {
+  height: 17px;
+  margin-top: 22px;
+}
+footer .list-footer li {
+  margin-bottom: 11px;
+}
+footer .list-footer li:nth-child(1) {
+  margin: 22px 0 28px;
+}
+footer .top-footer {
+  padding-bottom: 52px;
+}
+footer .bottom-footer {
+  border-top: 1px solid rgba(217, 218, 225, 0.8);
+  padding-top: 35px;
+  padding-bottom: 48px;
+}
+footer .bottom-footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+}
+footer .bottom-footer img {
+  width: 157px;
+  height: 33px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
