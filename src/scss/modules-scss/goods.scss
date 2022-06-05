@@ -5,6 +5,66 @@
     padding: 30px 0;
 }
 
+.container3 {
+    @include flex-container(row, space-between);
+}
+
+.container4 {
+    @include flex-container(column, space-between);
+}
+
+$filter-result-w: 1133px;
+$filter-result-h: 85px;
+
+.filter-result {
+    @include flex-container(row, space-between);
+    width: calc($filter-result-w - 40px * 2);
+    height: $filter-result-h;
+    background: $gray-light;
+    border-radius: 3px;
+    padding: 0 40px;
+
+    .count-goods {
+        @include flex-container(row, space-between);
+        width: 117px;
+
+        p:first-child {
+            @include font (450, 18px, $dark);
+            margin-top: 30px;
+        }
+
+        p:last-child {
+            @include font (450, 16px, $gray);
+            margin-top: 30px;
+        }
+    }
+
+    .price-filter {
+        @include flex-container(row, space-between);
+        width: 226px;
+
+        p {
+            @include font (450, 16px, $gray);
+            margin-top: 30px;
+        }
+
+        .price-filter-button {
+            @include flex-container(row, space-between);
+            width: 170px;
+
+            img {
+                height: 10px;
+                margin-top: 37px;
+            }
+
+            p {
+                @include font (450, 16px, $dark);
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
 .header-section {
     @include flex-container(row, space-between);
     width: 300px;

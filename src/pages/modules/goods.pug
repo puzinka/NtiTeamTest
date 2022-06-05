@@ -1,7 +1,23 @@
+- var countGoods = '2394';
+- var word = "товаров";
+
 .sections
     .header-section
         p Главная
         p /
         p Отопительное оборудование
     p.title-section Отопительное оборудование
-    include filter
+    .container3
+        include filter
+        .container4
+            .filter-result
+                .count-goods
+                    p=countGoods 
+                    p=word 
+                .price-filter 
+                    p Цена: 
+                    +header("По возрастанию", "price-filter-button")
+
+
+
+

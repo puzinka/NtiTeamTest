@@ -9,30 +9,96 @@
         div(class=name)
             p=text
             img(src="../img/show.png", alt="Show")
-    //mixin checkbox(name-id, text)
-     //   div 
-       //     input(type="checkbox" id=name-id)
-         //   label(for=name-id)=text
 
     +header("Отопительное оборудование","classification filter-section-header")
     #classification-hidden
-        div 
-            input(type="checkbox" id="radiator")
+        .container2 
+            input(class="checkbox" type="checkbox" id="radiator")
             label(for="radiator") Радиаторы отопления
+        .container2 
+            input(class="checkbox" type="checkbox" id="convector")
+            label(for="convector") Конвекторы отопления
+        .container2  
+            input(class="checkbox" type="checkbox" id="dryer")
+            label(for="dryer") Полотенцесушители
+        .container2  
+            input(class="checkbox" type="checkbox" id="fitting")
+            label(for="fitting") Арматура для радиаторов
     
     +header("Бренд", "brand filter-section-header")
+    #brand-hidden
+        .container2 
+            input(class="checkbox" type="checkbox" id="purmo")
+            label(for="purmo") Purmo
+        .container2 
+            input(class="checkbox" type="checkbox" id="irsap")
+            label(for="irsap") Irsap
+        .container2 
+            input(class="checkbox" type="checkbox" id="terma")
+            label(for="terma") Terma
+        .container2 
+            input(class="checkbox" type="checkbox" id="loten")
+            label(for="loten") Loten
+        .container2 
+            input(class="checkbox" type="checkbox" id="guardo")
+            label(for="guardo") Guardo
 
     div(class="price filter-section-header")
-            p Цена
-
+        p Цена
+    include slider 
+    
     +header("Количество секций", "count-sections filter-section-header")
+    #sections-hidden
+        .container2 
+            input(class="checkbox" type="checkbox" id="four")
+            label(for="four") 4
+        .container2 
+            input(class="checkbox" type="checkbox" id="six")
+            label(for="six") 6
+        .container2 
+            input(class="checkbox" type="checkbox" id="eight")
+            label(for="eight") 8
+        .container2 
+            input(class="checkbox" type="checkbox" id="twelve")
+            label(for="twelve") 12
 
     +header("Межосетевое расстояние", "distance filter-section-header")
+    #dictance-hidden
+        .container2 
+            input(class="checkbox" type="checkbox" id="twenty")
+            label(for="twenty") 20 см
+        .container2 
+            input(class="checkbox" type="checkbox" id="thirty-five")
+            label(for="thirty-five") 35 см
+        .container2 
+            input(class="checkbox" type="checkbox" id="fifty")
+            label(for="fifty") 50 см
 
     +header("Площадь отопления", "heating-area filter-section-header")
+    #heating-area-sections-hidden
+        .container2 
+            input(class="checkbox" type="checkbox" id="m19")
+            label(for="m19") 
+                | Более 19м
+                sup 2
+        .container2 
+            input(class="checkbox" type="checkbox" id="m8")
+            label(for="m8") 
+                | Менее 8м
+                sup 2
+        .container2 
+            input(class="checkbox" type="checkbox" id="m10")
+            label(for="m10") 
+                | От 10 до 14м
+                sup 2
+        .container2 
+            input(class="checkbox" type="checkbox" id="m15")
+            label(for="m15") 
+                | От 15 до 26м
+                sup 2
 
     +header("Цвет", "color filter-section-header")
-
+    #color-sections-hidden
 
 
 
