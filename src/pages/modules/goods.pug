@@ -3,20 +3,23 @@
 
 .sections
     .header-section
-        p Главная
-        p /
-        p Отопительное оборудование
+        p.mobile-hidden Главная
+        p.mobile-hidden /
+        p.mobile-hidden Отопительное оборудование
     p.title-section Отопительное оборудование
     .container3
         include filter
-        .container4
+    .container4
             .filter-result
                 .count-goods
                     p=countGoods 
                     p=word 
-                .price-filter 
+                div(class="price-filter mobile-hidden") 
                     p Цена: 
                     +header("По возрастанию", "price-filter-button")
+                div(class="price-filter-m desktop-hidden") 
+                    p#filter-open Фильтры 
+                    p.price-filter-button Сортировка
             include cards
 
 

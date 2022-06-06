@@ -1,0 +1,78 @@
+.sections {
+    .title-section {
+        @include font (500, 25px, $dark);
+        margin: 70px auto 0;
+        width: 370px;
+    }
+
+    .count-goods {
+        @include flex-container(row, space-between);
+        width: 114px;
+        margin-left: 24px;
+        margin-top: 10px;
+
+        p:first-child {
+            @include font (500, 18px, $dark);
+        }
+
+        p:nth-child(2) {
+            @include font (400, 16px, $gray);
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .price-filter-m {
+        @include flex-container(row, space-between);
+        width: 372px;
+        height: 88px;
+        border-radius: 3px;
+        background: $gray-light;
+        margin: 30px auto 0;
+    }
+
+    .price-filter-button {
+        @include font (550, 16px, $dark);
+        height: 10px;
+        margin-top: 33px;
+        width: 145px;
+        position: relative;
+    }
+
+    .price-filter-button::after {
+        content: '';
+        background-image: url(../img/show.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 13px;
+        position: absolute;
+        top: 7px;
+        left: 110px;
+    }
+
+    #filter-open {
+        @include font (550, 16px, $dark);
+        position: relative;
+        margin-left: 45px;
+        margin-top: 33px;
+    }
+
+    #filter-open::before {
+        content: '';
+        background-image: url(../img/filter.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 19px;
+        height: 21px;
+        position: absolute;
+        top: -2px;
+        left: -30px;
+    }
+
+    .container3 {
+        margin: 0;
+    }
+}

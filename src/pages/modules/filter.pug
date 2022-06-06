@@ -1,7 +1,7 @@
-.filter
+div(class="filter mobile-hidden")
     .container
         p.title-filter Фильтры
-        #reset
+        #reset(onclick = "red.classList.remote('color-active'); red.classList.add('color-regular'); yellow.classList.remote('color-active'); yellow.classList.add('color-regular');green.classList.remote('color-active'); green.classList.add('color-regular');blue.classList.remote('color-active'); blue.classList.add('color-regular');purple.classList.remote('color-active'); purple.classList.add('color-regular');pink.classList.remote('color-active'); pink.classList.add('color-regular');beige.classList.remote('color-active'); beige.classList.add('color-regular');white.classList.remote('color-active'); white.classList.add('color-regular');black.classList.remote('color-active'); black.classList.add('color-regular');gray.classList.remote('color-active'); gray.classList.add('color-regular');")
             p Сбросить
             img(src="../img/reset.png", alt="Reset")
 
@@ -100,5 +100,15 @@
     +header("Цвет", "color filter-section-header")
     #color-sections-hidden
         include color-filter
+    div(class="white-section desktop-hidden")
+        div(class="button-banner desktop-hidden")
+                div
+                    mixin forward-white
+                        img(src="../img/forward-white.svg")
 
+                    +forward-white
+                    +forward-white
+                    +forward-white
+                    +forward-white
+                p Применить
     

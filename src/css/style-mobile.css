@@ -204,4 +204,431 @@ header {
   margin-left: 20px;
 }
 
+.sections .title-section {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #2B2E34;
+  margin: 70px auto 0;
+  width: 370px;
+}
+.sections .count-goods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 114px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+.sections .count-goods p:first-child {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2B2E34;
+}
+.sections .count-goods p:nth-child(2) {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9F9EAC;
+}
+.sections .count-goods p {
+  margin: 0;
+}
+.sections .price-filter-m {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 372px;
+  height: 88px;
+  border-radius: 3px;
+  background: #F4F4F4;
+  margin: 30px auto 0;
+}
+.sections .price-filter-button {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 550;
+  font-size: 16px;
+  color: #2B2E34;
+  height: 10px;
+  margin-top: 33px;
+  width: 145px;
+  position: relative;
+}
+.sections .price-filter-button::after {
+  content: "";
+  background-image: url(../img/show.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 13px;
+  position: absolute;
+  top: 7px;
+  left: 110px;
+}
+.sections #filter-open {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 550;
+  font-size: 16px;
+  color: #2B2E34;
+  position: relative;
+  margin-left: 45px;
+  margin-top: 33px;
+}
+.sections #filter-open::before {
+  content: "";
+  background-image: url(../img/filter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 21px;
+  position: absolute;
+  top: -2px;
+  left: -30px;
+}
+.sections .container3 {
+  margin: 0;
+}
+
+.filter {
+  width: 375px;
+  background: #F4F4F4;
+  border-radius: 3px;
+  padding: 60px 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.filter .title-filter {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2B2E34;
+  margin: 0;
+  display: inline;
+}
+.filter .button-banner {
+  background: #38d3e8;
+  width: 137px;
+  padding-left: 25px;
+  position: absolute;
+  bottom: 34px;
+  left: 22px;
+}
+.filter .button-banner P {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+.filter .button-banner div {
+  width: 31px;
+  margin-top: 7px;
+}
+.filter .button-banner img {
+  height: 10px;
+  width: 10px;
+}
+
+#color-section-hidden {
+  margin-bottom: 0;
+}
+
+.white-section {
+  width: 415px;
+  height: 115px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+}
+
+#reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 106px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  bottom: -48px;
+  z-index: 2;
+  right: 40px;
+}
+#reset p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 450;
+  font-size: 16px;
+  color: #7E838C;
+  margin: 5px 0 0 0;
+  letter-spacing: 0.6px;
+}
+#reset img {
+  height: 20px;
+  margin-top: 7px;
+}
+
+.filter-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 43px;
+  margin-top: 28px;
+}
+.filter-section-header p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2B2E34;
+  letter-spacing: 0.4px;
+}
+.filter-section-header img {
+  height: 10px;
+  margin-top: 27px;
+}
+
+#classification-hidden,
+#brand-hidden,
+#sections-hidden,
+#dictance-hidden,
+#heating-area-sections-hidden,
+#color-sections-hidden {
+  margin-top: 38px;
+  margin-bottom: 37px;
+}
+
+.filter .container2 {
+  margin-top: 16px;
+}
+.filter .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.filter .checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2B2E34;
+}
+.filter .checkbox:checked + label {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2B2E34;
+}
+.filter .checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: none;
+  margin-right: 22px;
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.filter .checkbox:checked + label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%232B2E34' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.container3 {
+  margin: 50px 0 96px;
+}
+
+.slider {
+  width: 370px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #dee1e8;
+  position: relative;
+}
+
+.slider .progress {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #38d3e8;
+}
+
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  top: -5px;
+  height: 5px;
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: none;
+}
+.range-input input[type=range]::-webkit-slider-thumb {
+  height: 22px;
+  width: 5px;
+  border-radius: 2.5px;
+  background: #38d3e8;
+  -webkit-appearance: none;
+  pointer-events: auto;
+}
+.range-input input[type=range]::-moz-range-thumb {
+  height: 22px;
+  width: 5px;
+  border-radius: 2.5px;
+  background: #38d3e8;
+  -moz-appearance: none;
+  pointer-events: auto;
+  border: none;
+}
+
+.color-regular {
+  width: 158px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1.3px;
+}
+.color-regular p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2B2E34;
+  margin-left: 27px;
+  margin-top: 0;
+}
+.color-regular .circ-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-top: 7px;
+  margin-left: 4px;
+}
+
+.color-active {
+  width: 158px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1.3px;
+}
+.color-active p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2B2E34;
+  margin-left: 23px;
+  margin-top: 0;
+  position: relative;
+}
+.color-active .circ-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 3px solid #ffffff;
+  margin-top: 3px;
+  margin-left: 4px;
+  margin-bottom: 25px;
+}
+.color-active .color-red,
+.color-active .color-yellow,
+.color-active .color-green,
+.color-active .color-blue,
+.color-active .color-purple,
+.color-active .color-pink,
+.color-active .color-beige,
+.color-active .color-white,
+.color-active .color-black,
+.color-active .color-gray {
+  position: relative;
+}
+.color-active .color-red::before,
+.color-active .color-yellow::before,
+.color-active .color-green::before,
+.color-active .color-blue::before,
+.color-active .color-purple::before,
+.color-active .color-pink::before,
+.color-active .color-beige::before,
+.color-active .color-white::before,
+.color-active .color-black::before,
+.color-active .color-gray::before {
+  position: absolute;
+  background-image: url("../img/color-reset.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  width: 13px;
+  height: 13px;
+  top: -5px;
+}
+.color-active .color-red::before,
+.color-active .color-pink::before {
+  left: 147px;
+}
+.color-active .color-yellow::before,
+.color-active .color-black::before {
+  left: 141px;
+}
+.color-active .color-green::before {
+  left: 148px;
+}
+.color-active .color-blue::before,
+.color-active .color-white::before,
+.color-active .color-gray::before {
+  left: 130px;
+}
+.color-active .color-purple::before {
+  left: 177px;
+}
+.color-active .color-beige::before {
+  left: 150px;
+}
+
+.color-red {
+  background: #FF6060;
+}
+
+.color-yellow {
+  background: #FFDC60;
+}
+
+.color-green {
+  background: #72E191;
+}
+
+.color-blue {
+  background: #6070FF;
+}
+
+.color-purple {
+  background: #A660FF;
+}
+
+.color-pink {
+  background: #FF60AC;
+}
+
+.color-beige {
+  background: #EEC3AB;
+}
+
+.color-white {
+  background: #ffffff;
+}
+
+.color-black {
+  background: #292929;
+}
+
+.color-gray {
+  background: #9D9D9D;
+}
+
 /*# sourceMappingURL=style-mobile.css.map */

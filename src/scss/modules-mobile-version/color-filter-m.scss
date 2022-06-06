@@ -1,19 +1,20 @@
 .color-regular {
     width: 158px;
     @include flex-container(row, flex-start);
-    margin-top: 0.3px;
+    margin-top: 1.3px;
 
     p {
-        @include font (400, 15px, $dark);
+        @include font (400, 18px, $dark);
         margin-left: 27px;
         margin-top: 0;
     }
 
     .circ-color {
-        width: 10px;
-        height: 10px;
-        border-radius: 11px;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
         margin-top: 7px;
+        margin-left: 4px;
     }
 
 }
@@ -21,21 +22,23 @@
 .color-active {
     width: 158px;
     @include flex-container(row, flex-start);
-    margin-top: 0.3px;
+    margin-top: 1.3px;
 
     p {
-        @include font (500, 15px, $dark);
+        @include font (500, 18px, $dark);
         margin-left: 23px;
         margin-top: 0;
         position: relative;
     }
 
     .circ-color {
-        width: 10px;
-        height: 10px;
-        border-radius: 11px;
-        border: 2px solid $white;
-        margin-top: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        border: 3px solid $white;
+        margin-top: 3px;
+        margin-left: 4px;
+        margin-bottom: 25px;
     }
 
     .color-red,
@@ -66,37 +69,37 @@
         background-repeat: no-repeat;
         background-size: cover;
         content: '';
-        width: 10px;
-        height: 10px;
-        top: 0;
+        width: 13px;
+        height: 13px;
+        top: -5px;
     }
 
     .color-red::before,
     .color-pink::before  {
-        left: 116px;
+        left: calc(116px + 31px);
     }
 
     .color-yellow::before,
     .color-black::before {
-        left: 110px;
+        left: calc(110px + 31px);
     }
 
     .color-green::before {
-        left: 117px;
+        left: calc(117px + 31px);
     }
 
     .color-blue::before,
     .color-white::before,
     .color-gray::before {
-        left: 99px;
+        left: calc(99px + 31px);
     }
 
     .color-purple::before {
-        left: 146px;
+        left: calc(146px + 31px);
     }
 
     .color-beige::before {
-        left: 119px;
+        left: calc(119px + 31px);
     }
 
 }
@@ -140,17 +143,4 @@
 
 .color-gray {
     background: $gray-color;
-}
-
-#red,
-#yellow,
-#green,
-#blue,
-#purple,
-#pink,
-#beige,
-#white,
-#black,
-#gray {
-    cursor: pointer;
 }

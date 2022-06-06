@@ -1,0 +1,56 @@
+$width: 370px;
+$height: 5px;
+
+.container3 {
+    margin: 50px 0 96px;
+}
+
+.slider {
+    width: $width;
+    height: $height;
+    border-radius: calc($height * 0.5);
+    background: $slider;
+    position: relative;
+}
+
+.slider .progress {
+    position:absolute;
+    left: 25%;
+    right: 25%;
+    height: $height;
+    border-radius: calc($height * 0.5);
+    background: $blue-card;
+}
+
+.range-input {
+    position: relative;
+
+    input {
+        position: absolute;
+        top: -5px;
+        height: $height;
+        width: 100%;
+        pointer-events: none;
+        -webkit-appearance: none;
+        background: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        height: 22px;
+        width: $height;
+        border-radius: calc($height * 0.5);
+        background: $blue-card;
+        -webkit-appearance: none;
+        pointer-events: auto;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        height: 22px;
+        width: $height;
+        border-radius: calc($height * 0.5);
+        background: $blue-card;
+        -moz-appearance: none;
+        pointer-events: auto;
+        border: none;
+    }
+}
