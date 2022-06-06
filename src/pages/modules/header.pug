@@ -8,10 +8,11 @@ header
             img(src="../img/search.png", alt="Search")
             input(placeholder=textInSearch, maxlength="90")
         .header-menu
-            img(src="../img/delivery.png", alt="Delivery")
+            img.mobile-hidden(src="../img/delivery.png", alt="Delivery")
+            img.desktop-hidden(src="../img/phone.png", alt="Call")
             img(src="../img/account.png", alt="Account")
             .cart 
-                p 3
+                p.count-cart-hidden 3
                 img(src="../img/cart.png", alt="Cart")
     .feedback
         mixin contact (path, discription, text)

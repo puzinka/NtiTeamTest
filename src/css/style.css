@@ -89,6 +89,12 @@ header {
   font-size: 10px;
   color: #ffffff;
 }
+.header-menu .desktop-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: none;
+}
 .header-menu img {
   height: 24px;
   margin-top: 38px;
@@ -872,20 +878,5 @@ footer .bottom-footer img {
 .color-gray {
   background: #9D9D9D;
 }
-
-/*
-
-.color-active p::before {
-    position: absolute;
-    background-image: url("../img/color-reset.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    width: 10px;
-    height: 10px;
-    left: 118px;
-    top: 8px;
-}
-*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+$banner-h: 505px;
+
+.banner {
+    height: $banner-h;
+    background: linear-gradient(to bottom, $blue-dark, $blue-light);
+    position: relative;
+    margin-top: 54px;
+    overflow-x: hidden;
+
+    .picture {
+        position: absolute;
+        left: -130px;
+        bottom: 0;
+        width: 599px;
+    }
+
+    .banner-container {
+        @include flex-container(column, space-between);
+    }
+}
+
+$button-h: 54px;
+
+.button-banner {
+    height: calc($button-h - 26px * 2);
+    width: 160px;
+    border-radius: 2px;
+    background: $white;
+    margin: 42px auto 0;
+    padding: 16px 40px 36px 30px;
+    @include flex-container(row, space-between);
+
+    div {
+        @include flex-container(row, space-between);
+        width: 40px;
+        margin-top: 3px;
+
+        img {
+            width: 14px;
+            height: 14px;
+        }
+
+        img:first-child {
+            opacity: 20%;
+        }
+
+        img:nth-child(2) {
+            opacity: 50%;
+        }
+
+        img:nth-child(3) {
+            opacity: 80%;
+        }
+    }
+
+    p {
+        @include font(500, 14px, $dark);
+        margin: 0;
+        letter-spacing: 0.8px;
+    }
+}
+
+.text-banner {
+    width: 354px;
+    margin: 29px auto 0;
+    text-align: center;
+
+    p:first-child {
+        @include font(600, 26px, $white);
+        margin: 13px 0;
+    }
+
+    p:last-child {
+        @include font(400, 14px, $white);
+        letter-spacing: 0.6px;
+        width: 312px;
+        margin-left: 20px;
+    }
+}
