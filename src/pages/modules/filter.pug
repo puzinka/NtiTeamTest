@@ -1,17 +1,17 @@
-div(class="filter mobile-hidden")
+div(id="openFilter" class="filter mobile-hidden")
     .container
         p.title-filter Фильтры
-        #reset(onclick = "red.classList.remote('color-active'); red.classList.add('color-regular'); yellow.classList.remote('color-active'); yellow.classList.add('color-regular');green.classList.remote('color-active'); green.classList.add('color-regular');blue.classList.remote('color-active'); blue.classList.add('color-regular');purple.classList.remote('color-active'); purple.classList.add('color-regular');pink.classList.remote('color-active'); pink.classList.add('color-regular');beige.classList.remote('color-active'); beige.classList.add('color-regular');white.classList.remote('color-active'); white.classList.add('color-regular');black.classList.remote('color-active'); black.classList.add('color-regular');gray.classList.remote('color-active'); gray.classList.add('color-regular');")
+        #reset(onclick = "radiator.checked = false; convector.checked = false; dryer.checked = false; fitting.checked = false; purmo.checked = false; irsap.checked = false; terma.checked = false; loten.checked = false; guardo.checked = false; four.checked = false; six.checked = false; eight.checked = false; twelve.checked = false; twenty.checked = false; thirtyFive.checked = false; fifty.checked = false; m19.checked = false; m8.checked = false; m10.checked = false; m15.checked = false; red.classList.remove('color-active'); red.classList.add('color-regular'); yellow.classList.remove('color-active'); yellow.classList.add('color-regular');green.classList.remove('color-active'); green.classList.add('color-regular');blue.classList.remove('color-active'); blue.classList.add('color-regular');purple.classList.remove('color-active'); purple.classList.add('color-regular');pink.classList.remove('color-active'); pink.classList.add('color-regular');beige.classList.remove('color-active'); beige.classList.add('color-regular');white.classList.remove('color-active'); white.classList.add('color-regular');black.classList.remove('color-active'); black.classList.add('color-regular');gray.classList.remove('color-active'); gray.classList.add('color-regular'); ")
             p Сбросить
             img(src="../img/reset.png", alt="Reset")
 
-    mixin header(text, name)
-        div(class=name)
+    mixin header(text, name, click)
+        div(class=name, onclick=click)
             p=text
             img(src="../img/show.png", alt="Show")
 
-    +header("Отопительное оборудование","classification filter-section-header")
-    #classification-hidden
+    +header("Отопительное оборудование","classification filter-section-header","classificationHidden.classList.toggle('mobile-hidden'); classificationHidden.classList.toggle('desktop-hidden');")
+    #classificationHidden
         .container2 
             input(class="checkbox" type="checkbox" id="radiator")
             label(for="radiator") Радиаторы отопления
@@ -25,8 +25,8 @@ div(class="filter mobile-hidden")
             input(class="checkbox" type="checkbox" id="fitting")
             label(for="fitting") Арматура для радиаторов
     
-    +header("Бренд", "brand filter-section-header")
-    #brand-hidden
+    +header("Бренд", "brand filter-section-header","brandHidden.classList.toggle('mobile-hidden');  brandHidden.classList.toggle('desktop-hidden');")
+    #brandHidden
         .container2 
             input(class="checkbox" type="checkbox" id="purmo")
             label(for="purmo") Purmo
@@ -47,8 +47,8 @@ div(class="filter mobile-hidden")
         p Цена
     include slider 
     
-    +header("Количество секций", "count-sections filter-section-header")
-    #sections-hidden
+    +header("Количество секций", "count-sections filter-section-header", "sectionsHidden.classList.toggle('mobile-hidden');  sectionsHidden.classList.toggle('desktop-hidden');")
+    #sectionsHidden
         .container2 
             input(class="checkbox" type="checkbox" id="four")
             label(for="four") 4
@@ -62,20 +62,20 @@ div(class="filter mobile-hidden")
             input(class="checkbox" type="checkbox" id="twelve")
             label(for="twelve") 12
 
-    +header("Межосетевое расстояние", "distance filter-section-header")
-    #dictance-hidden
+    +header("Межосетевое расстояние", "distance filter-section-header", "dictanceHidden.classList.toggle('mobile-hidden');  dictanceHidden.classList.toggle('desktop-hidden');")
+    #dictanceHidden
         .container2 
             input(class="checkbox" type="checkbox" id="twenty")
             label(for="twenty") 20 см
         .container2 
-            input(class="checkbox" type="checkbox" id="thirty-five")
+            input(class="checkbox" type="checkbox" id="thirtyFive")
             label(for="thirty-five") 35 см
         .container2 
             input(class="checkbox" type="checkbox" id="fifty")
             label(for="fifty") 50 см
 
-    +header("Площадь отопления", "heating-area filter-section-header")
-    #heating-area-sections-hidden
+    +header("Площадь отопления", "heating-area filter-section-header", "heatingAreaSectionsHidden.classList.toggle('mobile-hidden');  heatingAreaSectionsHidden.classList.toggle('desktop-hidden');")
+    #heatingAreaSectionsHidden
         .container2 
             input(class="checkbox" type="checkbox" id="m19")
             label(for="m19") 
@@ -97,11 +97,11 @@ div(class="filter mobile-hidden")
                 | От 15 до 26м
                 sup 2
 
-    +header("Цвет", "color filter-section-header")
-    #color-sections-hidden
+    +header("Цвет", "color filter-section-header","colorSectionsHidden.classList.toggle('mobile-hidden')")
+    #colorSectionsHidden
         include color-filter
     div(class="white-section desktop-hidden")
-        div(class="button-banner desktop-hidden")
+        div(class="button-banner desktop-hidden", onclick="openFilter.classList.toggle('mobile-hidden');")
                 div
                     mixin forward-white
                         img(src="../img/forward-white.svg")

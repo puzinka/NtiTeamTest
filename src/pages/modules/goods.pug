@@ -18,7 +18,7 @@
                         p Цена: 
                         +header("По возрастанию", "price-filter-button")
                     div(class="price-filter-m desktop-hidden") 
-                        p(id="filter-open", class="desktop-hidden") Фильтры 
+                        p(id="filter-open", class="desktop-hidden", onclick="openFilter.classList.toggle('mobile-hidden');") Фильтры 
                         p.price-filter-button Сортировка
                 include cards
 

@@ -7,13 +7,6 @@ body {
   background: #F8FAFA;
 }
 
-.desktop-hidden {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  display: none;
-}
-
 header {
   background: #ffffff;
 }
@@ -86,6 +79,7 @@ header {
   margin-top: 25px;
   margin-left: 20px;
   width: 28px;
+  cursor: pointer;
 }
 
 .header-menu {
@@ -155,6 +149,7 @@ header {
   background: #ffffff;
   margin: 42px auto 0;
   padding: 16px 40px 36px 30px;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -280,6 +275,7 @@ header {
   position: relative;
   margin-left: 45px;
   margin-top: 33px;
+  cursor: pointer;
 }
 .sections #filter-open::before {
   content: "";
@@ -304,6 +300,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .filter .title-filter {
   font-family: Euclid-Circular-A, sans-serif;
@@ -380,6 +377,7 @@ header {
   justify-content: space-between;
   height: 43px;
   margin-top: 28px;
+  margin-bottom: 40px;
 }
 .filter-section-header p {
   font-family: Euclid-Circular-A, sans-serif;
@@ -393,12 +391,12 @@ header {
   margin-top: 27px;
 }
 
-#classification-hidden,
-#brand-hidden,
-#sections-hidden,
-#dictance-hidden,
-#heating-area-sections-hidden,
-#color-sections-hidden {
+#classificationHidden,
+#brandHidden,
+#sectionsHidden,
+#dictanceHidden,
+#heatingAreaSectionsHidden,
+#colorSectionsHidden {
   margin-top: 38px;
   margin-bottom: 37px;
 }
@@ -445,7 +443,21 @@ header {
 }
 
 .container3 {
-  margin: 50px 0 96px;
+  margin: 43px auto 0;
+}
+
+.value-slider {
+  width: 278px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.value-slider p {
+  font-family: Euclid-Circular-A, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2B2E34;
+  margin-top: 25px;
 }
 
 .slider {
@@ -458,8 +470,8 @@ header {
 
 .slider .progress {
   position: absolute;
-  left: 25%;
-  right: 25%;
+  left: 0%;
+  right: 32%;
   height: 5px;
   border-radius: 2.5px;
   background: #38d3e8;

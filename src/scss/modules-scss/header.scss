@@ -8,6 +8,14 @@ $input-h: 24px;
 header {
     background: $white;
 }
+
+.desktop-hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 .header {
     @include flex-container(row, space-between);
     height: $header-h;
@@ -51,6 +59,7 @@ header {
     height: $menu-h;
     margin-top: calc($header-h * 0.5 - $menu-h * 0.5);
     margin-left: 13px;
+    cursor: pointer;
 }
 
 .logo {

@@ -5,6 +5,16 @@ $height: 3px;
     margin: 40px 0 82px;
 }
 
+.value-slider {
+    width: 278px;
+    @include flex-container(row, space-between);
+
+    p {
+        @include font (600, 18px, $dark);
+        margin-top: 25px;
+    }
+}
+
 .slider {
     width: $width;
     height: $height;
@@ -15,11 +25,21 @@ $height: 3px;
 
 .slider .progress {
     position:absolute;
-    left: 25%;
-    right: 25%;
+    left: 0%;
+    right: -6%;
     height: $height;
     border-radius: calc($height * 0.5);
     background: $blue-card;
+}
+
+.value-slider {
+    width: 278px;
+    @include flex-container(row, space-between);
+
+    p {
+        @include font (600, 18px, $dark);
+        margin-top: 25px;
+    }
 }
 
 .range-input {
@@ -27,7 +47,7 @@ $height: 3px;
 
     input {
         position: absolute;
-        top: -5px;
+        top: -9px;
         height: $height;
         width: 100%;
         pointer-events: none;

@@ -2,7 +2,17 @@ $width: 370px;
 $height: 5px;
 
 .container3 {
-    margin: 50px 0 96px;
+    margin: 43px auto 0;
+}
+
+.value-slider {
+    width: 278px;
+    @include flex-container(row, space-between);
+
+    p {
+        @include font (600, 18px, $dark);
+        margin-top: 25px;
+    }
 }
 
 .slider {
@@ -15,8 +25,8 @@ $height: 5px;
 
 .slider .progress {
     position:absolute;
-    left: 25%;
-    right: 25%;
+    left: 0%;
+    right: 32%;
     height: $height;
     border-radius: calc($height * 0.5);
     background: $blue-card;

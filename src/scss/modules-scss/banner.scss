@@ -28,6 +28,7 @@ $button-h: 78px;
     background: $white;
     margin-top: 110px;
     padding: 26px 51px;
+    cursor: pointer;
     @include flex-container(row, space-between);
 
     div {
