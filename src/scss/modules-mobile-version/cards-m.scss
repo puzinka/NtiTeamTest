@@ -1,0 +1,23 @@
+.cards-m {
+    @include flex-container(column, space-between);
+    width: 372px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 38px;
+
+    .row-cards {
+        @include flex-container(row, space-between);
+        margin-bottom: 14px;
+    }
+}
+
+#more {
+    width: 105px;
+    border-bottom: 2px solid $dark;
+    margin: 36px auto 120px;
+
+    p {
+        @include font (450, 15px, $dark);
+        margin: 0;
+    }
+}

@@ -2,7 +2,7 @@ include first-card
 include second-card
 include third-card
 
-.cards
+div(class="cards mobile-hidden")
     .row-cards
         +first-card
         +second-card(true)
@@ -23,4 +23,21 @@ include third-card
         +first-card
         +second-card(false)
         +third-card
+
+div(class="cards-m desktop-hidden")
+    .row-cards
+        +first-card
+        +second-card(true)
+    .row-cards
+        +first-card
+        +first-card
+    .row-cards
+        +first-card
+        +first-card
+    .row-cards
+        +first-card
+        +first-card
+
+div(id="more", class="desktop-hidden")
+    p Показать еще
     
