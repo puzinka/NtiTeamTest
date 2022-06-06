@@ -7,6 +7,13 @@ body {
   background: #F8FAFA;
 }
 
+.desktop-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
 header {
   background: #ffffff;
 }
@@ -814,7 +821,7 @@ footer .bottom-footer img {
   content: "";
   width: 10px;
   height: 10px;
-  top: -2px;
+  top: 0;
 }
 .color-active .color-red::before,
 .color-active .color-pink::before {
@@ -877,6 +884,19 @@ footer .bottom-footer img {
 
 .color-gray {
   background: #9D9D9D;
+}
+
+#red,
+#yellow,
+#green,
+#blue,
+#purple,
+#pink,
+#beige,
+#white,
+#black,
+#gray {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

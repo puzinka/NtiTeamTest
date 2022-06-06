@@ -9,18 +9,18 @@
     p.title-section Отопительное оборудование
     .container3
         include filter
-    .container4
-            .filter-result
-                .count-goods
-                    p=countGoods 
-                    p=word 
-                div(class="price-filter mobile-hidden") 
-                    p Цена: 
-                    +header("По возрастанию", "price-filter-button")
-                div(class="price-filter-m desktop-hidden") 
-                    p#filter-open Фильтры 
-                    p.price-filter-button Сортировка
-            include cards
+        .container4
+                .filter-result
+                    .count-goods
+                        p=countGoods 
+                        p=word 
+                    div(class="price-filter mobile-hidden") 
+                        p Цена: 
+                        +header("По возрастанию", "price-filter-button")
+                    div(class="price-filter-m desktop-hidden") 
+                        p(id="filter-open", class="desktop-hidden") Фильтры 
+                        p.price-filter-button Сортировка
+                include cards
 
 
 

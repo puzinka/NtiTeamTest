@@ -2,3 +2,10 @@ body {
     margin: 0;
     background: $bg-goods;
 }
+
+.desktop-hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
+}
